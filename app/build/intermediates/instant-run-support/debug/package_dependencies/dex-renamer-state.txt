@@ -1,0 +1,19 @@
+#Fri May 26 22:01:42 EEST 2017
+renamed.5=classes5.dex
+renamed.4=classes3.dex
+renamed.3=classes2.dex
+renamed.2=classes6.dex
+renamed.1=classes4.dex
+renamed.0=classes.dex
+base.5=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_8e5c3886a915f61d1e458f62db9549c9c433d8c5
+base.4=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d8e12348018db8a59850c041a151987ca10071f7
+base.3=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b5db51f263a870379e4fcaa6eb2be7d6ac358852
+base.2=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.0_013f8ae0d4c1a4ec5c725d17cf5d18773021b50b
+base.1=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_2cd896aae26f9b2adf336b69fe8cb5738038ea63
+base.0=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_459316d1a671875c34a4ad92b1c8f0a0cc90f9b7
+file.5=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_8e5c3886a915f61d1e458f62db9549c9c433d8c5/classes.dex
+file.4=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d8e12348018db8a59850c041a151987ca10071f7/classes.dex
+file.3=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b5db51f263a870379e4fcaa6eb2be7d6ac358852/classes.dex
+file.2=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.0_013f8ae0d4c1a4ec5c725d17cf5d18773021b50b/classes.dex
+file.1=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_2cd896aae26f9b2adf336b69fe8cb5738038ea63/classes.dex
+file.0=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_459316d1a671875c34a4ad92b1c8f0a0cc90f9b7/classes.dex

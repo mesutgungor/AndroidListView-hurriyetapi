@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/background_material_light"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/haberbasligi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Haber Başlığı..."
+        android:textColor="#a4090e"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/haberresmi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/son_dakika" />
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/habertarihi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/12/2017"
+            android:textColor="#516ac9" />
+
+        <TextView
+            android:id="@+id/haberkategorisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/yerel-haberler/izmir/"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/habericerigi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:background="#a4090e"
+            android:text="Haber içeriği Haber içeriği Haber içeriği Haber içeriği Haber içeriği Haber içeriği Haber içeriği Haber içeriği Haber içeriği Haber içeriği Haber içeriği "
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>
