@@ -215,13 +215,13 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        // 2 Dakikada bir haberleri getirmek için eklenen kod.
+        // 5 Dakikada bir haberleri getirmek için eklenen kod.
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     new getirHaberleri().execute();
                 }
-            }, 2*60*1000);
+            }, 5*60*1000);
 
 
         }
