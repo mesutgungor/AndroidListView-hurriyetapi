@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by mesutgungor on 5/24/17.
@@ -20,6 +22,7 @@ import java.util.ArrayList;
 public class HaberAdapter extends ArrayAdapter<Haber> {
 
     private LayoutInflater li;
+    private Map<String, Bitmap> bitmaps = new HashMap<>();
     private ArrayList<Haber> haberler;
     Context myContext;
 
@@ -50,10 +53,14 @@ public class HaberAdapter extends ArrayAdapter<Haber> {
         TextView habericerigi = (TextView) convertView.findViewById(R.id.habericerigi);
         ImageView haberresmi = (ImageView) convertView.findViewById(R.id.haberresmi);
 
-        //Haberresmini indirecek olan async task ı çağırıyoruz.
         String haberresimurl = haberler.get(position).getHaberresmi();
-        new HaberResmiIndir(haberresmi).execute(haberresimurl);
-
+        //Eğer haberin resmi daha önceden indirilmişse tekrar indirmiyoruz eskisini kullanıyoruz.
+        if(bitmaps.containsKey(haberresimurl)) {
+            haberresmi.setImageBitmap(bitmaps.get(haberresimurl));
+        }else {
+            //Eğer indirilmemişse haberin resmini async task ile indiriyoruz.
+            new HaberResmiIndir(haberresmi).execute(haberresimurl);
+        }
         // Haberle ilgili textviewlere ilgili textleri atıyoruz.
 
         haberbasligi.setText(haberler.get(position).getHaberbasligi());
@@ -82,6 +89,8 @@ public class HaberAdapter extends ArrayAdapter<Haber> {
             try {
                 InputStream in = new java.net.URL(haberResmiUrl).openStream();
                 haberresmi = BitmapFactory.decodeStream(in);
+                bitmaps.put(urls[0], haberresmi); //Daha sonra tekrar indirmemek  için resmi hashmape atıyoruz.
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
