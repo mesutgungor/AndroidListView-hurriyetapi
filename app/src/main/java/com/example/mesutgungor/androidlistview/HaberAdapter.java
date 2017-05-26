@@ -91,7 +91,7 @@ public class HaberAdapter extends ArrayAdapter<Haber> {
         protected void onPostExecute(Bitmap result) {
 
             if (result != null){
-            hbrResmi.setImageBitmap(result);
+                hbrResmi.setImageBitmap(result);
             }else {
                 hbrResmi.setImageResource(R.drawable.son_dakika);
             }
