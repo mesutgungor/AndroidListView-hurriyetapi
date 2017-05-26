@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             Toast.makeText(getApplicationContext(),
-                                    "Hata Oluştu." + e.getMessage(),
+                                    "Internet Bağlantı Hatası" ,
                                     Toast.LENGTH_LONG)
                                     .show();
                         }
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Toast.makeText(getApplicationContext(),
-                                "Sunucu Bağlantı Hatası.",
+                                "Internet Bağlantı Hatası.",
                                 Toast.LENGTH_LONG)
                                 .show();
                     }

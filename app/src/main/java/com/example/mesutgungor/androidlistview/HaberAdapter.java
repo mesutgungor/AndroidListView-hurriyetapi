@@ -51,8 +51,8 @@ public class HaberAdapter extends ArrayAdapter<Haber> {
         ImageView haberresmi = (ImageView) convertView.findViewById(R.id.haberresmi);
 
         //Haberresmini indirecek olan async task ı çağırıyoruz.
-        haberler.get(position).getHaberresmi();
-        new HaberResmiIndir(haberresmi).execute(haberler.get(position).getHaberresmi());
+        String haberresimurl = haberler.get(position).getHaberresmi();
+        new HaberResmiIndir(haberresmi).execute(haberresimurl);
 
         // Haberle ilgili textviewlere ilgili textleri atıyoruz.
 

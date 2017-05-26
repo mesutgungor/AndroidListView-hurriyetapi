@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:3:5-54
 		INJECTED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main
 	android:name
 		ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:7:5-31:19
+ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:7:5-23:19
 MERGED from [com.android.support:appcompat-v7:23.0.0] /Users/mesutgungor/.android/build-cache/dbf0020f75e31a085ada6e4fe0313fc14e82001d/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.0] /Users/mesutgungor/.android/build-cache/00f97916dc2643c0fc6045dfce4b5218156054ba/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/mesutgungor/.android/build-cache/36c1fc96991ed941e5968eb8736cb8e8bf88c1fd/output/AndroidManifest.xml:9:5-20
@@ -50,20 +50,6 @@ activity#com.example.mesutgungor.androidlistview.HaberDetay
 ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:21:9-48
 	android:name
 		ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:21:19-45
-receiver#com.example.mesutgungor.androidlistview.InternetOnReceiver
-ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:23:9-30:20
-	android:enabled
-		ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:25:13-35
-	android:exported
-		ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:26:13-36
-	android:name
-		ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:24:13-47
-intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:27:13-29:29
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:28:17-79
-	android:name
-		ADDED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml:28:25-76
 uses-sdk
 INJECTED from /Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.0.0] /Users/mesutgungor/.android/build-cache/dbf0020f75e31a085ada6e4fe0313fc14e82001d/output/AndroidManifest.xml:20:5-43
