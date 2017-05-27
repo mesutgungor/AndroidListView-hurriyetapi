@@ -1,8 +1,8 @@
 #Internal package file, do not edit.
-#Sat May 27 02:03:53 EEST 2017
+#Sat May 27 08:05:28 EEST 2017
 122.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
 60.set=ANDROID_RESOURCE
-129.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png
+129.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
 52.set=ANDROID_RESOURCE
 53.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 44.set=ANDROID_RESOURCE
@@ -43,7 +43,7 @@
 112.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
 122.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 21.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/color-v11/abc_background_cache_hint_selector_material_light.xml
-119.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+119.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
 129.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 28.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/layout-land/list_view_row_model.xml
 75.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_btn_colored_material.xml
@@ -105,7 +105,7 @@
 111.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_popup_enter.xml
 121.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 20.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_menu_item_layout.xml
-118.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+118.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
 128.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 27.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_select_dialog_material.xml
 74.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_material_light.xml
@@ -117,7 +117,7 @@
 0.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 119.set=ANDROID_RESOURCE
 44.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
-81.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+81.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
 91.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 7.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 88.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/color-v11/abc_background_cache_hint_selector_material_dark.xml
@@ -141,7 +141,7 @@
 97.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
 104.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 5.set=ANDROID_RESOURCE
-50.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+50.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
 134.set=ANDROID_RESOURCE
 57.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_shrink_fade_out_from_bottom.xml
 126.set=ANDROID_RESOURCE
@@ -180,7 +180,7 @@
 33.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_grow_fade_in_from_bottom.xml
 109.set=ANDROID_RESOURCE
 43.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
-80.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+80.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
 90.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 6.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 87.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_layout.xml
@@ -199,7 +199,7 @@
 10.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 42.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/menu/menu_main.xml
 5.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/color/abc_secondary_text_material_dark.xml
-49.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+49.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
 96.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_screen_simple_overlay_action_mode.xml
 103.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_
 3.set=ANDROID_RESOURCE
@@ -369,7 +369,7 @@ count=138
 54.set=ANDROID_RESOURCE
 46.set=ANDROID_RESOURCE
 38.set=ANDROID_RESOURCE
-130.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+130.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png
 137.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
 2.file=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_template_big_media_narrow.xml
 14.base=/Users/mesutgungor/AndroidStudioProjects/AndroidListView/app/build/intermediates/res/resources-debug.ap_

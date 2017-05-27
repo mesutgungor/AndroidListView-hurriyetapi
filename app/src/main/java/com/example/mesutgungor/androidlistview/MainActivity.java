@@ -1,6 +1,7 @@
 package com.example.mesutgungor.androidlistview;
 
 
+import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -34,13 +35,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-
+import static java.lang.Thread.sleep;
 
 
 public class MainActivity extends AppCompatActivity {
 
     ArrayList<Haber> haberlistesi = new ArrayList<Haber>();
-
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,16 +86,24 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public class getirHaberleri extends AsyncTask<String, Void, String> {
+    public class getirHaberleri extends AsyncTask<String, Integer, String> {
 
         HttpURLConnection urlConnection;
 
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            progressDialog = new ProgressDialog(MainActivity.this);
+            progressDialog.setMax(100);
+            progressDialog.setProgress(0);
+            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            progressDialog.show();
+        }
 
         @Override
         protected String doInBackground(String... args) {
-
+            int i=0;
             StringBuilder result = new StringBuilder();
-            int progresscounter = 20;
 
             //Try bloğunda hurriyet apisine bağlanıyoruz ve haberleri içeren json stringini oluşturuyoruz.
             try {
@@ -105,6 +114,9 @@ public class MainActivity extends AppCompatActivity {
                 String line;
                 while ((line = reader.readLine()) != null) {
                     result.append(line);
+                    i=i+100;
+                    publishProgress(i);
+                  // sleep(10000);
                 }
 
             }catch( Exception e) {
@@ -121,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-
+            progressDialog.dismiss();
 
             if (result != null) {
 
@@ -213,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
                     }
             );
 
+
         }
 
         // 5 Dakikada bir haberleri getirmek için eklenen kod.
@@ -224,6 +237,12 @@ public class MainActivity extends AppCompatActivity {
             }, 5*60*1000);
 
 
+        }
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values);
+            Integer currentProgress = values[0];
+            progressDialog.setProgress(currentProgress);
         }
 
     }
