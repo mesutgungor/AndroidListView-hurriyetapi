@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public class getirHaberleri extends AsyncTask<String, Integer, String> {
+    public class getirHaberleri extends AsyncTask<Void, Integer, String> {
 
         HttpURLConnection urlConnection;
 
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        protected String doInBackground(String... args) {
+        protected String doInBackground(Void... voids) {
             int i=0;
             StringBuilder result = new StringBuilder();
 
