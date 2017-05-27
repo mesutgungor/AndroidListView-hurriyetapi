@@ -40,7 +40,7 @@ import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<Haber> haberlistesi = new ArrayList<Haber>();
+    private ArrayList<Haber> haberlistesi = new ArrayList<Haber>();
     private ProgressDialog progressDialog;
 
     @Override
@@ -48,12 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Activity oluşturulduğunda haberleri getirmesi için arka plan görevini çağırıyoruz..
+        new getirHaberleri().execute();
 
         SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.swiperefresh);
         ArrayList<Haber> haberlistesi = new ArrayList<Haber>();
 
-        //Activity oluşturulduğunda haberleri getirmesi için arka plan görevini çağırıyoruz..
-        new getirHaberleri().execute();
 
 
         //Listview in başındayken aşağı doğru swipe yaptığımızda haberleri güncellemesini sağlar.
@@ -82,10 +82,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
     public class getirHaberleri extends AsyncTask<Void, Integer, String> {
 
         HttpURLConnection urlConnection;
@@ -96,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
             progressDialog = new ProgressDialog(MainActivity.this);
             progressDialog.setMax(100);
             progressDialog.setProgress(0);
-            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-            progressDialog.show();
+            progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        //    progressDialog.show();
         }
 
         @Override
@@ -114,10 +110,10 @@ public class MainActivity extends AppCompatActivity {
                 String line;
                 while ((line = reader.readLine()) != null) {
                     result.append(line);
-                    i=i+100;
-                    publishProgress(i);
-                  // sleep(10000);
+                    //i=i+100;
+                   // sleep(10000);
                 }
+                urlConnection.disconnect();
 
             }catch( Exception e) {
                 e.printStackTrace();
@@ -133,7 +129,9 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
+            SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.swiperefresh);
             progressDialog.dismiss();
+            swipeRefreshLayout.setRefreshing(false);
 
             if (result != null) {
 
@@ -172,7 +170,6 @@ public class MainActivity extends AppCompatActivity {
 
                                 Haber haberin = new Haber(haberresmiurl,  haberkategorisi,  habericerigi, haberurl, habertarihi, haberbasligi);
                                 haberlistesi.add(haberin);
-
                             }
                         }
                     }
@@ -181,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             Toast.makeText(getApplicationContext(),
-                                    "Internet Bağlantı Hatası" ,
+                                    "JSON Hatası" ,
                                     Toast.LENGTH_LONG)
                                     .show();
                         }
@@ -194,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Toast.makeText(getApplicationContext(),
-                                "Internet Bağlantı Hatası.",
+                                "JSON Bağlantı Hatası.",
                                 Toast.LENGTH_LONG)
                                 .show();
                     }
@@ -202,14 +199,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
+
         if(haberlistesi.size()>0)
         {
-            SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.swiperefresh);
             ListView lv = (ListView)findViewById(R.id.listView);
             HaberAdapter ha = new HaberAdapter(getApplicationContext(),R.layout.list_view_row_model,haberlistesi);
             lv.setAdapter(ha);
 
-            swipeRefreshLayout.setRefreshing(false);
 
             lv.setOnItemClickListener(
                     new AdapterView.OnItemClickListener() {
@@ -240,7 +236,6 @@ public class MainActivity extends AppCompatActivity {
         }
         @Override
         protected void onProgressUpdate(Integer... values) {
-            super.onProgressUpdate(values);
             Integer currentProgress = values[0];
             progressDialog.setProgress(currentProgress);
         }

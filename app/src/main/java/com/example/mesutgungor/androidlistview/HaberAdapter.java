@@ -55,12 +55,13 @@ public class HaberAdapter extends ArrayAdapter<Haber> {
 
         String haberresimurl = haberler.get(position).getHaberresmi();
         //Eğer haberin resmi daha önceden indirilmişse tekrar indirmiyoruz eskisini kullanıyoruz.
-        if(bitmaps.containsKey(haberresimurl)) {
+        if (bitmaps.containsKey(haberresimurl)) {
             haberresmi.setImageBitmap(bitmaps.get(haberresimurl));
-        }else {
+        } else {
             //Eğer indirilmemişse haberin resmini async task ile indiriyoruz.
             new HaberResmiIndir(haberresmi).execute(haberresimurl);
         }
+
         // Haberle ilgili textviewlere ilgili textleri atıyoruz.
 
         haberbasligi.setText(haberler.get(position).getHaberbasligi());
