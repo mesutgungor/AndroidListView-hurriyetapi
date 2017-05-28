@@ -221,6 +221,27 @@ public class MainActivity extends AppCompatActivity {
                     }
             );
 
+            lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                @Override
+                public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
+                                               int position, long id) {
+
+                    Log.v("long clicked","pos: " + position);
+                    Intent sharingIntent = new Intent(
+                            android.content.Intent.ACTION_SEND);
+                    sharingIntent.setType("text/plain");
+                    String shareBody = haberlistesi.get(position).getHaberinicerigi()+"\n Kaynak:"+haberlistesi.get(position).getHaberUrl();
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
+                            haberlistesi.get(position).getHaberbasligi());
+
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,
+                            shareBody);
+                    startActivity(Intent.createChooser(sharingIntent, "Paylaş"));
+                    return true;
+
+                }
+            });
+
 
         }
 
